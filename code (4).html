@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMB SNBT - UNIVERSITAS TWENTY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <div class="mr-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a7a6ebc6-2cf9-4d90-85dd-3e79763d436c.png" alt="Logo Universitas Twenty circular with blue and white theme showing torch of knowledge" class="rounded-full border-4 border-white" />
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold">SPMB SNBT 2025/2027</h1>
+                        <h2 class="text-xl md:text-2xl">UNIVERSITAS TWENTY</h2>
+                    </div>
+                </div>
+                <nav class="flex space-x-1 md:space-x-4">
+                    <a href="#home" class="px-3 py-2 rounded hover:bg-blue-700 transition-all">Beranda</a>
+                    <a href="#form" class="px-3 py-2 rounded hover:bg-blue-700 transition-all">Pendaftaran</a>
+                    <a href="#pengumuman" class="px-3 py-2 rounded hover:bg-blue-700 transition-all">Pengumuman</a>
+                    <a href="#galeri" class="px-3 py-2 rounded hover:bg-blue-700 transition-all">Galeri</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Seleksi Nasional Berbasis Tes</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Daftarkan diri Anda sekarang untuk menjadi bagian dari Universitas Twenty angkatan 2025/2027</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#form" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Daftar Sekarang</a>
+                <a href="#pengumuman" class="bg-white hover:bg-gray-100 text-blue-900 font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Cek Pengumuman</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang SPMB Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Tentang SPMB SNBT</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Persyaratan</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Lulusan SMA/SMK sederajat tahun 2023, 2024, atau 2025</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Mengisi formulir pendaftaran secara lengkap</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Mengupload foto diri (close up maksimal 1MB)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Tahapan Pendaftaran</h3>
+                    <ol class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="bg-blue-500 text-white rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0">1</span>
+                            <span>Mengisi formulir pendaftaran</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-500 text-white rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0">2</span>
+                            <span>Mengupload dokumen dan foto</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-500 text-white rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0">3</span>
+                            <span>Mendapatkan nomor pendaftaran</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-500 text-white rounded-full h-6 w-6 flex items-center justify-center mr-2 flex-shrink-0">4</span>
+                            <span>Menunggu pengumuman hasil seleksi</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="form" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Formulir Pendaftaran</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all card-hover">
+                <form id="pendaftaranForm">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="nama" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+                                <input type="text" id="nama" name="nama" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="telegram" class="block text-sm font-medium text-gray-700 mb-1">Username Telegram</label>
+                                <input type="text" id="telegram" name="telegram" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="jurusan" class="block text-sm font-medium text-gray-700 mb-1">Jurusan yang Dipilih</label>
+                                <select id="jurusan" name="jurusan" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Pilih Jurusan</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Teknik Elektro">Teknik Elektro</option>
+                                    <option value="Teknik Industri">Teknik Industri</option>
+                                    <option value="Manajemen">Manajemen</option>
+                                    <option value="Akuntansi">Akuntansi</option>
+                                    <option value="Kedokteran">Kedokteran</option>
+                                    <option value="Hukum">Hukum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="pendidikan" class="block text-sm font-medium text-gray-700 mb-1">Pendidikan Terakhir</label>
+                                <select id="pendidikan" name="pendidikan" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Pilih Pendidikan</option>
+                                    <option value="PAUD">PAUD</option>
+                                    <option value="TK">TK</option>
+                                    <option value="SD">SD</option>
+                                    <option value="SMP">SMP</option>
+                                    <option value="SMK">SMK</option>
+                                    <option value="SMA">SMA</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="foto" class="block text-sm font-medium text-gray-700 mb-1">Upload Foto</label>
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex-1">
+                                        <input type="file" id="foto" name="foto" accept="image/*" required class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                                    </div>
+                                    <div id="previewContainer" class="hidden">
+                                        <img id="previewFoto" src="#" alt="Preview foto yang diupload oleh pendaftar" class="h-12 w-12 rounded-full object-cover border border-gray-200">
+                                    </div>
+                                </div>
+                                <p class="mt-1 text-xs text-gray-500">Format JPEG, PNG (maks. 1MB)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button type="submit" class="gradient-bg text-white font-bold py-3 px-8 rounded-full hover:shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Daftar Sekarang
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan -->
+    <section id="galeri" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Galeri Kegiatan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="rounded-xl overflow-hidden shadow-lg transition-all card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5728eb23-a378-4b8e-8237-e033a72c0d25.png" alt="Mahasiswa Universitas Twenty sedang belajar di perpustakaan dengan latar buku-buku" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Kegiatan Belajar di Perpustakaan</h3>
+                        <p class="text-gray-600">Mahasiswa UT belajar bersama di perpustakaan kampus.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg transition-all card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c000949-976c-4852-8949-6bbab5644338.png" alt="Laboratorium komputer modern di Universitas Twenty dengan mahasiswa menggunakan komputer" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Praktikum di Laboratorium</h3>
+                        <p class="text-gray-600">Fasilitas laboratorium komputer terkini untuk praktikum mahasiswa.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg transition-all card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9b409c65-6558-488d-9953-fb145cd92685.png" alt="Wisudawan Universitas Twenty memakai toga dengan latar gedung kampus" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Wisuda Universitas Twenty</h3>
+                        <p class="text-gray-600">Momen bahagia wisudawan UT periode lalu.</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg transition-all card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ae8964f4-bcbb-4293-a3b1-f4ba0ceff8a4.png" alt="Seminar nasional di auditorium kampus dengan pembicara dan peserta" class="w-full h-48 object-cover" />
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Seminar Nasional</h3>
+                        <p class="text-gray-600">Kegiatan seminar rutin dengan pembicara ternama.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengumuman -->
+    <section id="pengumuman" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Pengumuman Hasil Seleksi</h2>
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8 transition-all card-hover">
+                <div id="formPengumuman">
+                    <div class="mb-6">
+                        <label for="nomorPendaftaran" class="block text-sm font-medium text-gray-700 mb-1">Masukkan Nomor Pendaftaran</label>
+                        <input type="text" id="nomorPendaftaran" placeholder="12 digit nomor pendaftaran" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="text-center">
+                        <button id="cekPengumuman" class="gradient-bg text-white font-bold py-3 px-8 rounded-full hover:shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Cek Pengumuman
+                        </button>
+                    </div>
+                </div>
+                <div id="hasilPengumuman" class="hidden mt-8 space-y-6">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2">Hasil Seleksi</h3>
+                        <p class="text-lg" id="statusHasil"></p>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-semibold text-lg mb-4">Detail Pendaftar</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-sm text-gray-500">Nomor Pendaftaran</span>
+                                    <p id="detailNoPendaftaran" class="font-medium"></p>
+                                </div>
+                                <div>
+                                    <span class="text-sm text-gray-500">Nama Lengkap</span>
+                                    <p id="detailNama" class="font-medium"></p>
+                                </div>
+                                <div>
+                                    <span class="text-sm text-gray-500">Jurusan</span>
+                                    <p id="detailJurusan" class="font-medium"></p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div>
+                                    <span class="text-sm text-gray-500">Pendidikan Terakhir</span>
+                                    <p id="detailPendidikan" class="font-medium"></p>
+                                </div>
+                                <div>
+                                    <span class="text-sm text-gray-500">Username Telegram</span>
+                                    <p id="detailTelegram" class="font-medium"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4 text-center">
+                        <img id="detailFoto" src="#" alt="Foto pendaftar yang telah diupload" class="mx-auto h-32 w-32 rounded-full object-cover border-4 border-blue-200">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">UNIVERSITAS TWENTY</h3>
+                    <p>Jl. Pendidikan No. 20, Kota Twenty<br>Provinsi Dua Puluh</p>
+                    <p class="mt-2">Email: info@universitas-twenty.ac.id<br>Telp: (021) 20202020</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Panduan Pendaftaran</a></li>
+                        <li><a href="#" class="hover:underline">Program Studi</a></li>
+                        <li><a href="#" class="hover:underline">Biaya Pendidikan</a></li>
+                        <li><a href="#" class="hover:underline">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SPMB SNBT</h3>
+                    <p>Tahun Ajaran: 2025/2027</p>
+                    <p>Periode Pendaftaran: 1 Januari - 30 April 2025</p>
+                    <p>Pengumuman: 15 Mei 2025</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-400 mt-8 pt-6 text-center">
+                <p>© 2025 Universitas Twenty. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle foto preview
+        document.getElementById('foto').addEventListener('change', function(e) {
+            const [file] = e.target.files;
+            if (file) {
+                const previewContainer = document.getElementById('previewContainer');
+                const previewFoto = document.getElementById('previewFoto');
+                previewFoto.src = URL.createObjectURL(file);
+                previewContainer.classList.remove('hidden');
+            }
+        });
+
+        // Generate random 12 digit number
+        function generateNomorPendaftaran() {
+            return Math.floor(100000000000 + Math.random() * 900000000000).toString();
+        }
+
+        // Simpan data pendaftaran ke localStorage
+        document.getElementById('pendaftaranForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nomorPendaftaran = generateNomorPendaftaran();
+            const nama = document.getElementById('nama').value;
+            const telegram = document.getElementById('telegram').value;
+            const jurusan = document.getElementById('jurusan').value;
+            const pendidikan = document.getElementById('pendidikan').value;
+            const foto = document.getElementById('foto').files[0];
+            
+            // Simpan ke localStorage
+            const pendaftar = {
+                nama,
+                telegram,
+                jurusan,
+                pendidikan,
+                foto: URL.createObjectURL(foto),
+                lolos: Math.random() < 0.3 // 30% chance lolos
+            };
+            
+            localStorage.setItem(nomorPendaftaran, JSON.stringify(pendaftar));
+            
+            // Tampilkan hasil pendaftaran
+            alert(`Pendaftaran berhasil! Nomor pendaftaran Anda: ${nomorPendaftaran}`);
+            
+            // Reset form
+            this.reset();
+            document.getElementById('previewContainer').classList.add('hidden');
+        });
+
+        // Cek pengumuman
+        document.getElementById('cekPengumuman').addEventListener('click', function() {
+            const nomorPendaftaran = document.getElementById('nomorPendaftaran').value.trim();
+            
+            if (nomorPendaftaran.length !== 12) {
+                alert('Nomor pendaftaran harus 12 digit!');
+                return;
+            }
+            
+            const pendaftarData = localStorage.getItem(nomorPendaftaran);
+            
+            if (!pendaftarData) {
+                alert('Nomor pendaftaran tidak ditemukan!');
+                return;
+            }
+            
+            const pendaftar = JSON.parse(pendaftarData);
+            
+            // Tampilkan hasil
+            document.getElementById('formPengumuman').classList.add('hidden');
+            document.getElementById('hasilPengumuman').classList.remove('hidden');
+            
+            document.getElementById('statusHasil').textContent = pendaftar.lolos ? 
+                'SELAMAT! Anda lolos seleksi.' : 
+                'Maaf, Anda belum berhasil lolos seleksi.';
+            
+            document.getElementById('statusHasil').className = pendaftar.lolos ? 
+                'text-lg text-green-600 font-bold' : 
+                'text-lg text-red-600 font-bold';
+            
+            document.getElementById('detailNoPendaftaran').textContent = nomorPendaftaran;
+            document.getElementById('detailNama').textContent = pendaftar.nama;
+            document.getElementById('detailJurusan').textContent = pendaftar.jurusan;
+            document.getElementById('detailPendidikan').textContent = pendaftar.pendidikan;
+            document.getElementById('detailTelegram').textContent = pendaftar.telegram;
+            document.getElementById('detailFoto').src = pendaftar.foto;
+            document.getElementById('detailFoto').alt = `Foto pendaftar ${pendaftar.nama}`;
+        });
+    </script>
+</body>
+</html>
+
